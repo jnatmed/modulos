@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los módulos hagan wrap */
+    align-items: stretch; /* Asegura que todos los módulos tengan la misma altura */
+    height: auto; /* Permite que la altura del contenedor se ajuste según el contenido */
+    padding: 20px; /* Espacio alrededor del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho del contenedor */
+}
+
+.module {
+    flex: 1 1 calc(33.333% - 2%); /* Ajusta el ancho de los módulos para que se envuelvan */
+    height: 300px;
+    margin: 1%; /* Espacio entre los módulos */
+    color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho */
+}
+
+/* Estilos específicos para cada módulo */
+.servicio-tecnico {
+    background-image: url('imgs/servicio-tecnico.webp');
+}
+
+.minutas-de-reunion {
+    background-image: url('imgs/minutas-de-reunion.webp');
+}
+
+.sistema-comercial {
+    background-image: url('imgs/sistema-comercial.jpg');
+}
